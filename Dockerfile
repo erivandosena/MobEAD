@@ -2,6 +2,8 @@
 
 FROM nginx:alpine
 
+LABEL vendor="Engenharia DevOps" maintainer="Erivando Sena<erivandosena@gmail.com>" description="Aplicação .Net" version="1.0.0"
+
 # Copia arquivos da aplicação web para pasta de publicação do Nginx
 COPY . /usr/share/nginx/html/
 COPY Web.config /etc/nginx/conf.d/Web.config
